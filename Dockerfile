@@ -1,5 +1,5 @@
 #FROM nginx
-FROM swaggerapi/swagger-generator
+FROM swaggerapi/swagger-generator:2.4.12
 RUN mkdir -p /generator/api
 COPY static.xml /generator/static.xml
 COPY *.yaml /generator/api/
